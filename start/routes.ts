@@ -45,3 +45,5 @@ Route.group(() => {
 })
   .prefix('/api')
   .as('api')
+
+Route.get('/health', 'HealthController.index').as('health.index')
